@@ -41,7 +41,8 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
+  border-bottom: 1px solid #d3d1d1;
 }
 
 nav .logo {
@@ -86,11 +87,12 @@ nav ul.main-menu {
   background: url("img/betradar2.jpg") no-repeat center center/cover;
   position: relative;
 }
-.showcase-overlay {
-  background-color: #000;
+.showcase::after {
+  content: "";
+  position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.8);
 }
 .content-wrapper {
   position: absolute;
@@ -99,6 +101,7 @@ nav ul.main-menu {
   border-right: 1px solid white;
   color: white;
   width: 50%;
+  z-index: 1;
 }
 .content-wrapper2 {
   position: absolute;
@@ -108,6 +111,7 @@ nav ul.main-menu {
   border: none;
   color: white;
   width: 50%;
+  z-index: 1;
 }
 .content1 {
   width: 70%;
@@ -203,7 +207,9 @@ nav ul.main-menu {
 .packages-text ul h2 {
   color: #5f5d5d;
   margin-bottom: 10px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  border-left: 4px solid #0ba546;
+  padding-left: 10px;
 }
 .packages-text ul li {
   line-height: 2em;
@@ -211,7 +217,7 @@ nav ul.main-menu {
 }
 .btn {
   display: inline-block;
-  margin-bottom: 20px;
+  margin: 15px 0 30px;
 }
 .btn a {
   border: 2px solid #0ba546;
@@ -231,7 +237,7 @@ nav ul.main-menu {
   display: grid;
   grid-template-columns: 40% auto;
   margin-top: 40px;
-  background: #7e7e7e52;
+  background: #e9e8e8;
   padding: 50px 20px;
 }
 .why-image img,
@@ -254,4 +260,194 @@ nav ul.main-menu {
 .why-text p {
   line-height: 2.2em;
   font-size: 17px;
+}
+
+.pricing {
+  padding: 5rem 6rem;
+}
+
+.pricing h1 {
+  color: #0ba546;
+  font-size: 40px;
+  line-height: 1.2em;
+  margin-bottom: 2rem;
+}
+
+.pricing .cards-wrapper > div {
+  border: 2px dashed rgb(172, 170, 170);
+  padding: 15px 20px;
+  border-radius: 15px;
+}
+.pricing .cards-wrapper > div:hover {
+  background: #f5f4f4;
+}
+
+.pricing .cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card-title,
+.price-title {
+  color: #0ba546;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 24px;
+}
+.card-title i {
+  font-size: 35px;
+}
+
+.price-title {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.price-tag {
+  margin-left: 50px;
+}
+
+.cards-wrapper ul li {
+  font-size: 16px;
+  line-height: 2em;
+  color: #5f5d5d;
+}
+
+.pricing-btn {
+  display: inline-block;
+  border: 2px solid #0ba546;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 2rem;
+  font-size: 17px;
+}
+.pricing-btn:hover {
+  background: #0ba546;
+  color: #fff;
+  transition: 0.3s ease-in;
+}
+
+.feature-value,
+.price-tag {
+  font-weight: 900;
+}
+
+.feature-value {
+  margin-left: 20px;
+}
+
+.best-features {
+  padding: 2rem 4rem;
+  background: #e9e8e8;
+}
+
+.best-features .cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.best-features .cards-container > div {
+  text-align: justify;
+  padding: 20px;
+}
+.best-features .cards-container > div img {
+  width: 100%;
+}
+
+.best-features h1 {
+  color: #0ba546;
+  margin-bottom: 10px;
+  font-size: 30px;
+  margin-left: 1.5rem;
+}
+
+.autobet-wrapper {
+  display: grid;
+  grid-template-columns: 40% auto;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.autobet-wrapper img {
+  width: 100%;
+}
+
+.autobet-text {
+  padding: 3rem 5rem;
+}
+
+.autobet-text h1 {
+  color: #0ba546;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.autobet-text p {
+  font-size: 17px;
+}
+
+.auto-btn {
+  display: inline-block;
+  border: 2px solid #0ba546;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 2rem;
+  font-size: 17px;
+}
+
+.auto-btn:hover {
+  background: #0ba546;
+  color: #fff;
+  transition: 0.3s ease-in;
+}
+
+footer {
+  background: #f5f4f4;
+  padding: 3rem 5rem;
+}
+.footer-top-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.footer-bottom {
+  margin-top: 2.6rem;
+  padding-right: 5rem;
+}
+
+.footer-bottom p {
+  line-height: 2em;
+}
+
+.footer-socials a {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.footer-socials a i {
+  font-size: 20px;
+}
+
+footer ul li {
+  line-height: 2em;
+}
+
+footer ul h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-bottom img {
+  width: 200px;
+  margin-left: -20px;
+}
+
+.copyright {
+  margin-top: 2rem;
+  font-weight: 900;
 }
