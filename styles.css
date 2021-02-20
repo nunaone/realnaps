@@ -50,6 +50,14 @@ nav .logo {
   margin-left: 50px;
 }
 
+.menu-btn {
+  position: absolute;
+  right: 20px;
+  font-size: 24px;
+  color: #0ba546;
+  display: none;
+}
+
 nav ul {
   display: flex;
 }
@@ -90,6 +98,8 @@ nav ul.main-menu {
 .showcase::after {
   content: "";
   position: absolute;
+  top: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
@@ -154,6 +164,10 @@ nav ul.main-menu {
 .content2 h3 {
   margin-top: 20px;
   text-transform: lowercase;
+}
+
+.showcase-content-md {
+  display: none;
 }
 .freetrial {
   display: inline-block;
@@ -227,7 +241,19 @@ nav ul.main-menu {
   border-radius: 6px;
 }
 
-.btn a:hover {
+.readmore {
+  display: inline-block;
+  margin: 15px 0 30px;
+  border: 2px solid #0ba546;
+  padding: 5px 20px;
+  color: #0ba546;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn a:hover,
+.readmore:hover {
   color: #fff;
   background-color: #0ba546;
   transition: 0.3s ease-in;
@@ -260,6 +286,10 @@ nav ul.main-menu {
 .why-text p {
   line-height: 2.2em;
   font-size: 17px;
+}
+
+#more {
+  display: none;
 }
 
 .pricing {
@@ -450,4 +480,351 @@ footer ul h2 {
 .copyright {
   margin-top: 2rem;
   font-weight: 900;
+}
+.mobilelogo {
+  display: none;
+}
+
+.mobile-socials {
+  display: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1236px) {
+  .pricing {
+    padding: 3rem;
+  }
+
+  .packages-text {
+    padding: 40px;
+  }
+
+  .why-text {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 1216px) {
+  .about-text {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 1169px) {
+  nav ul.main-menu {
+    margin-left: 35px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .cards-wrapper ul li {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1133px) {
+  .content-wrapper h1 {
+    font-size: 50px;
+  }
+
+  .about-text h1,
+  .why-text h1 {
+    font-size: 30px;
+  }
+
+  .autobet-text h1 {
+    font-size: 25px;
+  }
+
+  .autobet-text {
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .main-menu li {
+    font-size: 14px;
+  }
+
+  .right-menu li a i {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1066px) {
+  nav ul.main-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -500px;
+    transition: left 0.5s ease-in;
+    background: #f1f1f1;
+    height: 100%;
+    margin: 0;
+    width: 35%;
+    padding: 1.7rem 2rem 0 2rem;
+  }
+
+  .main-menu li {
+    font-size: 18px;
+    line-height: 3em;
+  }
+
+  nav ul li a {
+    color: #0ba546;
+  }
+
+  nav ul li a:hover {
+    border-bottom: 2px solid #0ba546;
+  }
+  .mobilelogo {
+    display: block;
+  }
+
+  .mobilelogo img {
+    width: 300px;
+    margin-left: -32px;
+  }
+
+  .mobile-socials {
+    display: block;
+  }
+
+  .mobile-socials a i {
+    font-size: 25px;
+  }
+  nav ul.main-menu.show {
+    left: 0;
+  }
+
+  .menu-btn {
+    position: absolute;
+    right: 40px;
+    font-size: 24px;
+    color: #0ba546;
+    display: block;
+    cursor: pointer;
+  }
+
+  .right-menu {
+    margin-right: 4.5rem;
+  }
+
+  .right-menu li {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .pricing .cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content1 img {
+    width: 350px;
+    margin-left: -42px;
+  }
+  .content1 h1 br {
+    display: none;
+  }
+  .content1 {
+    width: 80%;
+  }
+
+  .content1 h1 {
+    font-size: 40px;
+  }
+
+  .content2 h1 {
+    font-size: 25px;
+  }
+
+  .content2 {
+    margin: 160px auto;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 929px) {
+  .content1 h1 {
+    font-size: 35px;
+  }
+
+  .packages {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .packages-image,
+  .about-image,
+  .why-image,
+  .autobet-image {
+    text-align: center;
+  }
+  .packages-image img,
+  .about-image img,
+  .why-image img,
+  .autobet-wrapper img {
+    width: 500px;
+  }
+
+  .about,
+  .why,
+  .autobet-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.main-menu {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .content-wrapper,
+  .content-wrapper2 {
+    display: none;
+  }
+
+  .showcase {
+    height: 100vh;
+  }
+
+  .showcase-content-md {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    color: white;
+  }
+
+  .showcase-content-md .content2 {
+    margin-top: 30px;
+  }
+
+  .footer-top-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 3rem;
+  }
+  .footer-bottom {
+    padding-right: 1rem;
+  }
+
+  .best-features .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text h1 {
+    font-size: 24px;
+  }
+  nav ul.main-menu {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  nav ul.main-menu {
+    width: 60%;
+  }
+
+  .mobilelogo img {
+    width: 200px;
+  }
+
+  .packages-image img,
+  .about-image img,
+  .why-image img,
+  .autobet-wrapper img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav ul.main-menu {
+    width: 80%;
+  }
+
+  .menu-btn {
+    right: 20px;
+  }
+
+  nav .logo {
+    margin-left: 10px;
+  }
+
+  .showcase-content-md .content1 {
+    margin: 20px auto;
+  }
+
+  .showcase-content-md .content1 h1 {
+    font-size: 30px;
+  }
+
+  .showcase {
+    height: 700px;
+  }
+  .pricing {
+    padding: 1rem;
+  }
+
+  .pricing h1 {
+    font-size: 30px;
+  }
+
+  .best-features {
+    padding: 0.7rem;
+  }
+
+  .autobet-text {
+    padding: 0.7rem 1.2rem;
+  }
+
+  .why-text {
+    padding: 1.3rem 1rem;
+  }
+
+  .why-text h1 {
+    font-size: 25px;
+  }
+
+  .about-text {
+    padding: 1.5rem 1rem;
+  }
+
+  .packages-text {
+    padding: 1rem;
+  }
+
+  .packages-text h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 383px) {
+  nav ul.main-menu {
+    width: 84%;
+  }
+
+  .menu-btn {
+    right: 20px;
+  }
+
+  .main-menu li {
+    font-size: 16px;
+  }
+
+  nav .logo {
+    margin-left: 10px;
+  }
+
+  .right-menu li {
+    padding: 0 10px;
+  }
+
+  .footer-top-content {
+    grid-template-columns: 1fr;
+  }
 }

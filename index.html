@@ -23,12 +23,19 @@
         /></a>
         <!-- left nav -->
         <ul class="main-menu">
+          <li class="mobilelogo"><img src="img/logo.png" alt="" /></li>
           <li><a href="#">About Realnaps</a></li>
           <li><a href="#">Betting Tutorials</a></li>
           <li><a href="#">Free Trial</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Automatic Betting/Trading</a></li>
           <li><a href="#">FAQ</a></li>
+          <li class="footer-socials mobile-socials">
+            <a href="#"><i class="fab fa-youtube"></i> </a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
         </ul>
         <!-- right nav -->
         <ul class="right-menu">
@@ -39,6 +46,9 @@
             <a href="#"><i class="fas fa-user-plus"></i></a>
           </li>
         </ul>
+        <span class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </span>
       </nav>
 
       <!-- Showcase -->
@@ -58,6 +68,30 @@
           </div>
         </div>
         <div class="content-wrapper2">
+          <div class="content2">
+            <h1>Free predictions for your favourite betting website</h1>
+            <ul class="betsite">
+              <li><img src="img/bet1.jpg" alt="" /></li>
+              <li><img src="img/bet2.JPG" alt="" /></li>
+              <li><img src="img/bet3.JPG" alt="" /></li>
+            </ul>
+            <h3>24/7 VIRTUAL FOOTBALL PREDICTION SOFTWARE</h3>
+            <span class="freetrial"><a href="#">FREE TRIAL</a></span>
+          </div>
+        </div>
+        <div class="showcase-content-md">
+          <div class="content1">
+            <img src="img/logo.png" alt="" />
+            <h1>
+              Win Virtual <br />
+              Football With Ease
+            </h1>
+            <p>
+              Predicting and winning virtual football is easier with Realnaps
+              vfl prediction softwares. All you are expected to do is bet on the
+              games that has been predicted to you.
+            </p>
+          </div>
           <div class="content2">
             <h1>Free predictions for your favourite betting website</h1>
             <ul class="betsite">
@@ -126,9 +160,11 @@
       </section>
       <section class="why">
         <div class="why-image">
-          <img src="img/why.svg" alt="" />
-          <video src="img/vfl.mp4" autoplay muted loop></video>
           <img src="img/undraw4.svg" alt="" />
+          <!-- <div class="why-others">
+            <video src="img/vfl.mp4" autoplay muted loop></video>
+            <img src="img/why.svg" alt="" />
+          </div> -->
         </div>
         <div class="why-text">
           <h1>Why you need the RealNaps Prediction software.</h1>
@@ -139,36 +175,35 @@
             to effectively predict When you predict virtual football with your
             brain and limited calculative intelligence, you could be winning at
             the beginning of the season but after a while you will end up losing
-            eveything you most won.
+            eveything you most won.<span id="dots">...</span
+            ><span id="more">
+              Predicting bets involes calculations. To predict the outcome of an
+              event, you must first put certain conditions into consideration
+              and calculate your odds. calculating the odds of an event is
+              difficult without the help of a software. calculating odds is like
+              calculating numbers, it is easier to calculate 1 +2 but as you
+              procceed into more advanced numbers it becomes difficult, for
+              example calculating 9,453 x 42,343 329 / 190 +1,345 could take
+              hours. if you decide to use a calculator, it will take few
+              seconds. The biggest problem with calculating by hand or brain, is
+              not the amount of time wasted in calculation, the biggest problem
+              is after calculating and spending hours you could end up making
+              mistakes and getting the wrong answers. With a calculator you are
+              100% sure of getting the correct answer . A calculator will always
+              be accurate and faster in making calculations. Realnaps virtual
+              football calculator will always be more accurate and faster in
+              predicting virtual football bets than any human brain. Just like
+              you need a calculator for fast and accurate calculations, you need
+              Realnaps to be successfull in virtual football. Realnaps virtual
+              football Calculator use s a unique alogrithm to calculate and
+              predict virtual football games, the calculator tells you the best
+              and most rewarding option to bet. when it come s to virtual
+              football, Realnaps Virtual Football premium prediction softwares
+              are the only softwares you can trust for better accuracy and
+              predictions.
+            </span>
           </p>
-          <p>
-            Predicting bets involes calculations. To predict the outcome of an
-            event, you must first put certain conditions into consideration and
-            calculate your odds. calculating the odds of an event is difficult
-            without the help of a software. calculating odds is like calculating
-            numbers, it is easier to calculate 1 +2 but as you procceed into
-            more advanced numbers it becomes difficult, for example calculating
-            9,453 x 42,343 329 / 190 +1,345 could take hours. if you decide to
-            use a calculator, it will take few seconds. The biggest problem with
-            calculating by hand or brain, is not the amount of time wasted in
-            calculation, the biggest problem is after calculating and spending
-            hours you could end up making mistakes and getting the wrong answer
-            s.
-          </p>
-          <p>
-            With a calculator you are 100% sure of getting the correct answer .
-            A calculator will always be accurate and faster in making
-            calculations. Realnaps virtual football calculator will always be
-            more accurate and faster in predicting virtual football bets than
-            any human brain. Just like you need a calculator for fast and
-            accurate calculations, you need Realnaps to be successfull in
-            virtual football. Realnaps virtual football Calculator use s a
-            unique alogrithm to calculate and predict virtual football games,
-            the calculator tells you the best and most rewarding option to bet.
-            when it come s to virtual football, Realnaps Virtual Football
-            premium prediction softwares are the only softwares you can trust
-            for better accuracy and predictions.
-          </p>
+          <span class="readmore">Read more</span>
         </div>
       </section>
       <section class="pricing">
@@ -293,7 +328,9 @@
       </section>
       <section class="autobet">
         <div class="autobet-wrapper">
-          <img src="img/hero.png" alt="" />
+          <div class="autobet-image">
+            <img src="img/hero.png" alt="" />
+          </div>
           <div class="autobet-text">
             <h1>
               REALNAPS VIRTUAL FOOTBALL AUTOMATIC BETTING & TRADING SOFTWARE
@@ -366,5 +403,29 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const mainMenu = document.querySelector(".main-menu");
+      const readMore = document.querySelector(".readmore");
+
+      menuBtn.addEventListener("click", () => {
+        mainMenu.classList.toggle("show");
+      });
+      readMore.addEventListener("click", () => {
+        const dots = document.querySelector("#dots");
+        const moreText = document.querySelector("#more");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          readMore.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          readMore.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      });
+    </script>
   </body>
 </html>
